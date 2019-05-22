@@ -18,6 +18,7 @@ public class UserController {
 	@RequestMapping("login")
 	@ResponseBody
 	public User isLogin(User user1) {
+		//ÓÃ»§µÇÂ¼
 		User user2 = userServiceImpl.findUser(user1);
 		System.out.println(user2);
 		return user2;
