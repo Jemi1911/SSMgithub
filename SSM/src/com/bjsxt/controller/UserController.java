@@ -18,7 +18,7 @@ public class UserController {
 	@RequestMapping("login")
 	@ResponseBody
 	public User isLogin(User user1) {
-		//用户登录
+		//用户登录 json 返回
 		User user2 = userServiceImpl.findUser(user1);
 		System.out.println(user2);
 		return user2;
